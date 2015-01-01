@@ -59,7 +59,7 @@ namespace BPGameEngine {
         glyph->topRight.setUV(uvRect.x + uvRect.z, uvRect.y + uvRect.w);
         
         _glyphs.push_back(glyph);
-//        delete glyph;
+        //        delete glyph; // will be deleted on begin()
     }
     
     void SpriteBatch::end() {

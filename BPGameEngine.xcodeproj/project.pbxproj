@@ -35,6 +35,9 @@
 		E02802DA1A54709500EBA5C8 /* Camera2D.h in Headers */ = {isa = PBXBuildFile; fileRef = E02802D81A54709500EBA5C8 /* Camera2D.h */; };
 		E02806061A54AA5A00EBA5C8 /* SpriteBatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02806041A54AA5A00EBA5C8 /* SpriteBatch.cpp */; };
 		E02806071A54AA5A00EBA5C8 /* SpriteBatch.h in Headers */ = {isa = PBXBuildFile; fileRef = E02806051A54AA5A00EBA5C8 /* SpriteBatch.h */; };
+		E028060A1A55C46100EBA5C8 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02806081A55C46100EBA5C8 /* InputManager.cpp */; };
+		E028060B1A55C46100EBA5C8 /* InputManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E02806091A55C46100EBA5C8 /* InputManager.h */; };
+		E0C3781E1A55C8DF00DBE0FE /* Timing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0C3781D1A55C8DF00DBE0FE /* Timing.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,10 @@
 		E02806031A54935D00EBA5C8 /* glm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glm; sourceTree = "<group>"; };
 		E02806041A54AA5A00EBA5C8 /* SpriteBatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteBatch.cpp; sourceTree = "<group>"; };
 		E02806051A54AA5A00EBA5C8 /* SpriteBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteBatch.h; sourceTree = "<group>"; };
+		E02806081A55C46100EBA5C8 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
+		E02806091A55C46100EBA5C8 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
+		E0C3781C1A55C8CD00DBE0FE /* Timing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timing.h; sourceTree = "<group>"; };
+		E0C3781D1A55C8DF00DBE0FE /* Timing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timing.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +130,8 @@
 				E02802CE1A5223D000EBA5C8 /* BPGameEngine.cpp */,
 				E02802D71A54709500EBA5C8 /* Camera2D.cpp */,
 				E02806041A54AA5A00EBA5C8 /* SpriteBatch.cpp */,
+				E02806081A55C46100EBA5C8 /* InputManager.cpp */,
+				E0C3781D1A55C8DF00DBE0FE /* Timing.cpp */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -145,6 +154,8 @@
 				E02802CF1A5223D000EBA5C8 /* BPGameEngine.h */,
 				E02802D81A54709500EBA5C8 /* Camera2D.h */,
 				E02806051A54AA5A00EBA5C8 /* SpriteBatch.h */,
+				E02806091A55C46100EBA5C8 /* InputManager.h */,
+				E0C3781C1A55C8CD00DBE0FE /* Timing.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -171,6 +182,7 @@
 				E02802DA1A54709500EBA5C8 /* Camera2D.h in Headers */,
 				E02802351A51114800EBA5C8 /* Vertex.h in Headers */,
 				E02802301A51114800EBA5C8 /* picoPNG.h in Headers */,
+				E028060B1A55C46100EBA5C8 /* InputManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +212,7 @@
 		E02801F31A5110F800EBA5C8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Bojan Percevic";
 				TargetAttributes = {
 					E02801FA1A5110F800EBA5C8 = {
@@ -232,6 +244,7 @@
 			files = (
 				E02802D91A54709500EBA5C8 /* Camera2D.cpp in Sources */,
 				E02802241A51114800EBA5C8 /* Error.cpp in Sources */,
+				E0C3781E1A55C8DF00DBE0FE /* Timing.cpp in Sources */,
 				E02802CC1A521E2B00EBA5C8 /* Window.cpp in Sources */,
 				E02802221A51114700EBA5C8 /* AssetManager.cpp in Sources */,
 				E02802311A51114800EBA5C8 /* Sprite.cpp in Sources */,
@@ -242,6 +255,7 @@
 				E02802261A51114800EBA5C8 /* GLSLProgram.cpp in Sources */,
 				E02806061A54AA5A00EBA5C8 /* SpriteBatch.cpp in Sources */,
 				E028022D1A51114800EBA5C8 /* IOManager.cpp in Sources */,
+				E028060A1A55C46100EBA5C8 /* InputManager.cpp in Sources */,
 				E02802331A51114800EBA5C8 /* TextureCache.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -357,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
