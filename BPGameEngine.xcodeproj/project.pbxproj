@@ -27,18 +27,18 @@
 		E02802331A51114800EBA5C8 /* TextureCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E028021F1A51114700EBA5C8 /* TextureCache.cpp */; };
 		E02802341A51114800EBA5C8 /* TextureCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E02802201A51114700EBA5C8 /* TextureCache.h */; };
 		E02802351A51114800EBA5C8 /* Vertex.h in Headers */ = {isa = PBXBuildFile; fileRef = E02802211A51114700EBA5C8 /* Vertex.h */; };
-		E02802361A51115200EBA5C8 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E028020B1A51111C00EBA5C8 /* SDL2.framework */; };
-		E02802371A51115200EBA5C8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02802091A51110F00EBA5C8 /* OpenGL.framework */; };
 		E02802CC1A521E2B00EBA5C8 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02802CA1A521E2B00EBA5C8 /* Window.cpp */; };
 		E02802CD1A521E2B00EBA5C8 /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = E02802CB1A521E2B00EBA5C8 /* Window.h */; };
 		E02802D01A5223D000EBA5C8 /* BPGameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02802CE1A5223D000EBA5C8 /* BPGameEngine.cpp */; };
 		E02802D11A5223D000EBA5C8 /* BPGameEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = E02802CF1A5223D000EBA5C8 /* BPGameEngine.h */; };
+		E02802D91A54709500EBA5C8 /* Camera2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02802D71A54709500EBA5C8 /* Camera2D.cpp */; };
+		E02802DA1A54709500EBA5C8 /* Camera2D.h in Headers */ = {isa = PBXBuildFile; fileRef = E02802D81A54709500EBA5C8 /* Camera2D.h */; };
+		E02806061A54AA5A00EBA5C8 /* SpriteBatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E02806041A54AA5A00EBA5C8 /* SpriteBatch.cpp */; };
+		E02806071A54AA5A00EBA5C8 /* SpriteBatch.h in Headers */ = {isa = PBXBuildFile; fileRef = E02806051A54AA5A00EBA5C8 /* SpriteBatch.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E02801FB1A5110F800EBA5C8 /* libBPGameEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBPGameEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E02802091A51110F00EBA5C8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		E028020B1A51111C00EBA5C8 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = /Library/Frameworks/SDL2.framework; sourceTree = "<absolute>"; };
 		E028020E1A51114700EBA5C8 /* AssetManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssetManager.cpp; sourceTree = "<group>"; };
 		E028020F1A51114700EBA5C8 /* AssetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetManager.h; sourceTree = "<group>"; };
 		E02802101A51114700EBA5C8 /* Error.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Error.cpp; sourceTree = "<group>"; };
@@ -63,6 +63,11 @@
 		E02802CB1A521E2B00EBA5C8 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
 		E02802CE1A5223D000EBA5C8 /* BPGameEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BPGameEngine.cpp; sourceTree = "<group>"; };
 		E02802CF1A5223D000EBA5C8 /* BPGameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPGameEngine.h; sourceTree = "<group>"; };
+		E02802D71A54709500EBA5C8 /* Camera2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera2D.cpp; sourceTree = "<group>"; };
+		E02802D81A54709500EBA5C8 /* Camera2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera2D.h; sourceTree = "<group>"; };
+		E02806031A54935D00EBA5C8 /* glm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glm; sourceTree = "<group>"; };
+		E02806041A54AA5A00EBA5C8 /* SpriteBatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteBatch.cpp; sourceTree = "<group>"; };
+		E02806051A54AA5A00EBA5C8 /* SpriteBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteBatch.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E02802361A51115200EBA5C8 /* SDL2.framework in Frameworks */,
-				E02802371A51115200EBA5C8 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,21 +100,11 @@
 		E02801FD1A5110F800EBA5C8 /* BPGameEngine */ = {
 			isa = PBXGroup;
 			children = (
+				E02806031A54935D00EBA5C8 /* glm */,
 				E02802571A51122C00EBA5C8 /* Sources */,
 				E02802581A51123F00EBA5C8 /* Headers */,
-				E028020D1A51112000EBA5C8 /* Frameworks */,
 			);
 			path = BPGameEngine;
-			sourceTree = "<group>";
-		};
-		E028020D1A51112000EBA5C8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E028020B1A51111C00EBA5C8 /* SDL2.framework */,
-				E02802091A51110F00EBA5C8 /* OpenGL.framework */,
-			);
-			name = Frameworks;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		E02802571A51122C00EBA5C8 /* Sources */ = {
@@ -128,6 +121,8 @@
 				E028021F1A51114700EBA5C8 /* TextureCache.cpp */,
 				E02802CA1A521E2B00EBA5C8 /* Window.cpp */,
 				E02802CE1A5223D000EBA5C8 /* BPGameEngine.cpp */,
+				E02802D71A54709500EBA5C8 /* Camera2D.cpp */,
+				E02806041A54AA5A00EBA5C8 /* SpriteBatch.cpp */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -148,6 +143,8 @@
 				E02802211A51114700EBA5C8 /* Vertex.h */,
 				E02802CB1A521E2B00EBA5C8 /* Window.h */,
 				E02802CF1A5223D000EBA5C8 /* BPGameEngine.h */,
+				E02802D81A54709500EBA5C8 /* Camera2D.h */,
+				E02806051A54AA5A00EBA5C8 /* SpriteBatch.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -165,11 +162,13 @@
 				E02802CD1A521E2B00EBA5C8 /* Window.h in Headers */,
 				E02802321A51114800EBA5C8 /* Sprite.h in Headers */,
 				E02802231A51114700EBA5C8 /* AssetManager.h in Headers */,
+				E02806071A54AA5A00EBA5C8 /* SpriteBatch.h in Headers */,
 				E028022A1A51114800EBA5C8 /* ImageLoader.h in Headers */,
 				E02802281A51114800EBA5C8 /* GLTexture.h in Headers */,
 				E02802271A51114800EBA5C8 /* GLSLProgram.h in Headers */,
 				E02802251A51114800EBA5C8 /* Error.h in Headers */,
 				E028022C1A51114800EBA5C8 /* Inputs.h in Headers */,
+				E02802DA1A54709500EBA5C8 /* Camera2D.h in Headers */,
 				E02802351A51114800EBA5C8 /* Vertex.h in Headers */,
 				E02802301A51114800EBA5C8 /* picoPNG.h in Headers */,
 			);
@@ -231,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E02802D91A54709500EBA5C8 /* Camera2D.cpp in Sources */,
 				E02802241A51114800EBA5C8 /* Error.cpp in Sources */,
 				E02802CC1A521E2B00EBA5C8 /* Window.cpp in Sources */,
 				E02802221A51114700EBA5C8 /* AssetManager.cpp in Sources */,
@@ -240,6 +240,7 @@
 				E028022B1A51114800EBA5C8 /* Inputs.cpp in Sources */,
 				E028022F1A51114800EBA5C8 /* picoPNG.cpp in Sources */,
 				E02802261A51114800EBA5C8 /* GLSLProgram.cpp in Sources */,
+				E02806061A54AA5A00EBA5C8 /* SpriteBatch.cpp in Sources */,
 				E028022D1A51114800EBA5C8 /* IOManager.cpp in Sources */,
 				E02802331A51114800EBA5C8 /* TextureCache.cpp in Sources */,
 			);
@@ -251,7 +252,7 @@
 		E02802041A5110F800EBA5C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -281,6 +282,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -291,7 +296,7 @@
 		E02802051A5110F800EBA5C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -316,6 +321,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -325,14 +334,21 @@
 		E02802071A5110F800EBA5C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"-I/Users/bp/Code/Game/BPGameEngine/BPGameEngine/glm/**",
 				);
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -340,14 +356,21 @@
 		E02802081A5110F800EBA5C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"-I/Users/bp/Code/Game/BPGameEngine/BPGameEngine/glm/**",
 				);
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
